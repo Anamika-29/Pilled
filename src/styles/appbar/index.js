@@ -3,7 +3,6 @@ import {styled} from "@mui/material/styles";
 import { Box } from "@mui/system";
 import "@fontsource/montez";
 import { Colors, DrawerWidth } from "../theme";
-import { textPopUpTop } from "../../animation";
 
 export const AppbarContainer = styled(Box)(() => ({    
     display: 'flex',
@@ -20,14 +19,12 @@ export const AppbarHeader = styled(Typography)(() => ({
   fontSize: "3em",
   // fontFamily: '"Montez", "cursive"',
   color: "white",
-  "&:hover": {
-    animation: `${textPopUpTop} 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both`,
-  },
+ 
 }));
 
 export const ActionIconsContainerMobile = styled(Box)(() => ({
   display: 'flex',
-  background: Colors.shaft,
+  background: '#E8E2E2',
   position: "fixed",
   bottom: 0,
   left: 0,
@@ -50,8 +47,6 @@ export const MyList = styled(List)(({ type }) => ({
   alignItems: "center",
   color: "white"
 }));
-
-
 
 export const DrawerCloseButton = styled(IconButton)(() => ({
   position: 'absolute',

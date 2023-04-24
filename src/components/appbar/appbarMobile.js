@@ -10,12 +10,12 @@ export default function AppbarMobile({ matches }) {
   return (
     <AppbarContainer>
       
-      <AppbarHeader  variant="h4">
+      <AppbarHeader  variant="h4" sx={{fontFamily: 'serif'}}>
         Pilled.
       </AppbarHeader>
       <IconButton onClick={() => setDrawerOpen(true)}>
-        <Button variant="contained" color="success">
-        <MenuIcon  color="secondary"/>
+        <Button variant="contained" sx={{ color: 'white', backgroundColor: '#A4BC92'}}>
+        <MenuIcon  color="white"/>
         </Button>
       </IconButton>
     </AppbarContainer>

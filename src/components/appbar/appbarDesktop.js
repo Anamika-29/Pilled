@@ -28,14 +28,13 @@ export default function AppbarDesktop({ matches }) {
 
   return (
     <AppbarContainer>
-      <AppbarHeader variant="h4">Pilled.</AppbarHeader>
+      <AppbarHeader variant="h4" sx={{fontFamily: 'serif'}}>Pilled.</AppbarHeader>
       <MyList type="row">
         <ListItemText primary="Home" />
         <ListItemText primary="About us" />
         <ListItemText primary="Services" />
         <ListItemText primary="Contact us" />
-        
-        <Button variant="contained" color="success">
+        <Button variant="contained" sx={{ color: 'white', backgroundColor: '#A4BC92'}}>
   Free quote
 </Button>
           </MyList>

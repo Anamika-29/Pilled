@@ -8,14 +8,26 @@ export const BannerContainer = styled(Box)(({ matches, theme }) => ({
   width: "100%",
   height: "100%",
   padding: "0px 0px",
-  background: Colors.primary,
+  background: "black",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
   },
-  // backgroundImage: `url(/images/banner/banner.png)`,
-  // backgroundRepeat: "no-repeat",
-  // backgroundPosition: "center",
+  
+}));
+export const FooterContainer = styled(Box)(({ matches, theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  width: "100%",
+  height: "100%",
+  padding: "0px 0px",
+  backgroundImage: 'url("https://cdn.wallpapersafari.com/77/1/IeCovk.jpg")',
+  
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  
 }));
 
 export const BannerContent = styled(Box)(() => ({
@@ -26,29 +38,31 @@ export const BannerContent = styled(Box)(() => ({
   padding: "30px",
 }));
 
-// export const BannerImage = styled("img")(({ src, theme }) => ({
-//   src: `url(${src})`,
-//   // backgroundImage: `url(${src})`,
-//   // backgroundRepeat: "no-repeat",
-//   // backgroundPosition: "center",
-//   width: "50",
-//   margin:"1px",
-//   [theme.breakpoints.down("md")]: {
-//     width: "350px",
-//     margin:""
-//   },
-//   [theme.breakpoints.down("sm")]: {
-//     width: "320px",
-//     height: "300px",
-//   },
-// }));
+
+export const BannerImage = styled("img")(({ src, theme }) => ({
+  src: `url(${src})`,
+  backgroundImage: `url(${src})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  width: "50",
+  margin:"1px",
+  [theme.breakpoints.down("md")]: {
+    width: "350px",
+    margin:""
+  },
+  [theme.breakpoints.down("sm")]: {
+    width: "320px",
+    height: "300px",
+  },
+}));
 
 export const BannerTitle = styled(Typography)(({ matches, theme }) => ({
   color: Colors.white,
   justifyContent: "center",
   alignItems: "center",
   lineHeight: 1.5,
-  fontSize: "72px",
+  fontSize: '50px',
+  fontFamily: 'serif',
   marginBottom: "20px",
   [theme.breakpoints.down('sm')]: {
     fontSize: '42px',    

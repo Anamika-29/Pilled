@@ -1,17 +1,12 @@
-import { Button, Typography, useMediaQuery } from "@mui/material";
+import {useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/system";
-import BannerImage from "../../styles/banner/banner";
 
 
 import {
   BannerContainer,
-  Home,
-  BannerContent,
-  BannerDescription,
-  
-  BannerShopButton,
-  BannerTitle,
+  BannerContent
 } from "../../styles/banner";
+import { ImageList,ImageListItem } from "@material-ui/core";
 
 export default function Banner() {
   const theme = useTheme();
@@ -19,19 +14,42 @@ export default function Banner() {
 
   return (
     <BannerContainer >
-      <BannerImage />
+      <ImageList sx={{ width: 450, height: 1000}} cols={matches ? 2 : 4} rowHeight={300}>
+    <ImageListItem>
+      <img
+        src={`/images/banner/banner1.jpg?w=164&h=164&fit=crop&auto=format`}
+        srcSet={`/images/banner/banner1.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+        
+        loading="lazy"
+      />
+    </ImageListItem>
+    <ImageListItem>
+      <img
+        src={`/images/banner/banner2.jpg?w=164&h=164&fit=crop&auto=format`}
+        srcSet={`/images/banner/banner2.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+        
+        loading="lazy"
+      />
+    </ImageListItem>
+    <ImageListItem>
+      <img
+        src={`/images/banner/banner3.jpg?w=164&h=164&fit=crop&auto=format`}
+        srcSet={`/images/banner/banner3.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+        
+        loading="lazy"
+      />
+    </ImageListItem><ImageListItem>
+      <img
+        src={`/images/banner/banner4.jpg?w=164&h=164&fit=crop&auto=format`}
+        srcSet={`/images/banner/banner4.jpg?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+        
+        loading="lazy"
+      />
+    </ImageListItem>
+</ImageList>
+      
       <BannerContent>
-        <BannerTitle variant="h2" position="center" >We Bring The Good</BannerTitle>
-        <BannerTitle variant="h2">
-          Pillows To Life.
-        </BannerTitle>
-
-        <BannerDescription variant="subtitle">
-          Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo
-          tempor incididunt ut labore et dolore magna
-        </BannerDescription>
-
-        <BannerShopButton color="primary">Shop Now</BannerShopButton>
+      
       </BannerContent>
     </BannerContainer>
   );

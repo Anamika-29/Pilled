@@ -4,6 +4,8 @@ import PersonIcon from "@mui/icons-material/Person";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Colors } from "../../styles/theme";
+import { FooterTitle } from "../../styles/footer";
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 export default function Actions({ matches }) {
 
@@ -11,7 +13,10 @@ export default function Actions({ matches }) {
 
   return (
     <Component>
-      <MyList type="row">
+      <FooterTitle  variant="caption2" sx={{fontFamily: 'serif', fontWeight:'bold'}}>
+        Copyright <CopyrightIcon/> 2021 pilled.
+      </FooterTitle>
+      {/* <MyList type="row">
         <ListItemButton
           sx={{
             justifyContent: "center",
@@ -60,7 +65,7 @@ export default function Actions({ matches }) {
           </ListItemIcon>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />
-      </MyList>
+      </MyList> */}
     </Component>
   );
 }

@@ -7,8 +7,8 @@ export default function ProductMeta({ product, matches }) {
         <Typography variant={matches ? "h6" : "h5"} lineHeight={2}>
           {product.name}
         </Typography>
-        <Typography variant={matches ? "caption" : "body1"}>
-          ${product.price}
+        <Typography variant={matches ? "caption" : "body1"} justifyContent="center" textAlign="center" sx={{color:'#A4BC92'}}>
+          {product.description}
         </Typography>
       </ProductMetaWrapper>
     );

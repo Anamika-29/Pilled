@@ -1,44 +1,41 @@
+import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
+import CasinoIcon from '@mui/icons-material/Casino';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
+import SignLanguageIcon from '@mui/icons-material/SignLanguage';
+import PetsIcon from '@mui/icons-material/Pets';
+import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt';
+
+
+
 export const products = [
     {
-        id: 1,
-        name: "Super Backpack",
-        price: 129.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_01.png"
+        name: "Soft Material",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<CasinoIcon sx={{color:'#E8E2E2'}}/>
     },
     {
-        id: 2,
-        name: "New Hip",
-        price: 199.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_02.png"
+        name: "Safe For Animal",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<PetsIcon sx={{color:'#E8E2E2'}}/>
     },
     {
-        id: 3,
-        name: "Elite Series",
-        price: 189.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_03.png"
+        name: "Comfortable Texture",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<Brightness5Icon sx={{color:'#E8E2E2'}}/>
     },
     {
-        id: 4,
-        name: "Casual",
-        price: 129.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_04.png"
+        name: "Happy Power",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<SentimentVerySatisfiedIcon sx={{color:'#E8E2E2'}}/>
     },
     {
-        id: 5,
-        name: "Best Tote",
-        price: 399.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_05.png"
+        name: "Good Quality",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<ThumbUpAltIcon sx={{color:'#E8E2E2'}}/>
     },
     {
-        id: 6,
-        name: "Charming Series",
-        price: 689.99,
-        description: "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
-        image: "/images/products/bag_06.png"
+        name: "Not Dusty",
+        description: "The versatile space makes it easy to keep a fresh supply of ingridient",
+        image:<SignLanguageIcon sx={{color:'#E8E2E2'}}/>
     }
 ]

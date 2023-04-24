@@ -6,16 +6,21 @@ import {
 import { Colors } from "../theme";
 
 export const FooterTitle = styled(Typography)(() => ({
-  textTransform: "uppercase",
+    padding: "4px",
+    flexGrow: 1,
+    // fontSize: "3em",
+    // fontFamily: '"Montez", "cursive"',
+    color: "black",
+    
   marginBottom: "1em",
 }));
 
 export const SubscribeTf = styled(TextField)(() => ({
   ".MuiInputLabel-root": {
-    color: Colors.secondary,
+    color: Colors.light_gray,
   },
 
   ".MuiInput-root::before": {
-    borderBottom: `1px solid ${Colors.secondary}`,
+    borderBottom: `1px solid ${Colors.light_gray}`,
   },
 }));
